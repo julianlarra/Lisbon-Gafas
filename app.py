@@ -135,7 +135,7 @@ return jsonify(result): El resultado serializado en formato JSON se devuelve com
 '''
 
 
-@app.route("/productos", methods=["GET"])
+@app.route("productos", methods=["GET"])
 def get_Productos():
     """
     Endpoint para obtener todos los productos de la base de datos.
@@ -167,7 +167,7 @@ update_producto(id):
 '''
 
 
-@app.route("/productos/<id>", methods=["GET"])
+@app.route("productos/<id>", methods=["GET"])
 def get_producto(id):
     """
     Endpoint para obtener un producto específico de la base de datos.
