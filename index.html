@@ -1,0 +1,63 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lisbon Gafas</title>
+   
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Oswald&family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="header">
+            <div class="titular">
+                <img src="/imagen/Logo lisbon.png" alt="Logo lisbon">
+                <!--<h1>LISBON</h1>
+                <h2>GAFAS</h2>  -->
+                <h2>Gafas de diseño y calidad</h2>
+            </div>
+        </div>
+        <div id="app" class="container">
+            <div class="grid-container grid-max-4">
+                
+                <div class="grid-item" v-for="(producto, index) in productos" :key="index" :class="'grid-item-' + (index % 10)">
+                    <div>
+                        <img width="200" :src="producto.imagen" :alt="producto.modelo">
+                    </div>
+                    <div>
+                        <p>{{producto.linea}}</p>
+                        <p>{{producto.precio}}</p>
+                        <p>{{producto.stock}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <h3>
+                <div class="elemento">
+                    <a class="fa-solid fa-house" href="templates/productos.html"> <span>Administradores</span></a>
+                </div>
+                <div class="elemento">
+                    <a class="fa-regular fa-envelope" href="/index.html"><span>Lisbon Gafas ® </span></a>
+                </div>
+            </h3>
+        </div>
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script><!--Link de VUE-->
+    <script src="/js/productos.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="Js/scrip.js"></script>
+   
+</body>
+</html>
+
