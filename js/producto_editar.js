@@ -93,7 +93,7 @@ createApp({
 
                 alert("Registro  modificado");
 
-                window.location.href = "/templates/productos.html";
+                window.location.href = "templates/productos.html";
 
             })
 
