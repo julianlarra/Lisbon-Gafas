@@ -16,7 +16,7 @@
 
     crossorigin="anonymous">
     
-    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
 </head>
 
 <body>
@@ -37,7 +37,7 @@
 
             <br>
 
-            <a class="btn btn-primary" href="templates/producto_nuevo.html">Nuevo</a>
+            <a class="btn btn-primary" href="producto_nuevo.html">Nuevo</a>
 
             <br><br>
 
@@ -115,7 +115,7 @@
 
                                     <td>
 
-                                        <a class="btn btn-primary" :href="'templates/producto_update.html?id='+ producto.id" >Editar</a>
+                                        <a class="btn btn-primary" :href="'producto_update.html?id='+ producto.id" >Editar</a>
                                             
                                         <button type="button" class="btn btn-danger" v-on:click="eliminar(producto.id)" >Eliminar</button>
 
