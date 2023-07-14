@@ -112,7 +112,7 @@ createApp({
 
                 alert("Registro grabado")
 
-                window.location.href = "templates/productos.html";
+                window.location.href = "productos.html";
 
             })
 
